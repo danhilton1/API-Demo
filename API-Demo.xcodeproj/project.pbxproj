@@ -13,8 +13,8 @@
 		376BE34024A4DE7600FB4514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 376BE33E24A4DE7600FB4514 /* Main.storyboard */; };
 		376BE34224A4DE7700FB4514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 376BE34124A4DE7700FB4514 /* Assets.xcassets */; };
 		376BE34524A4DE7700FB4514 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 376BE34324A4DE7700FB4514 /* LaunchScreen.storyboard */; };
-		376BE35024A4DE7700FB4514 /* BrezaaDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BE34F24A4DE7700FB4514 /* BrezaaDemoTests.swift */; };
-		376BE35B24A4DE7700FB4514 /* BrezaaDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BE35A24A4DE7700FB4514 /* BrezaaDemoUITests.swift */; };
+		376BE35024A4DE7700FB4514 /* API-DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BE34F24A4DE7700FB4514 /* API-DemoTests.swift */; };
+		376BE35B24A4DE7700FB4514 /* API-DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BE35A24A4DE7700FB4514 /* API-DemoUITests.swift */; };
 		376BE36F24A4DFF700FB4514 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BE36D24A4DFF700FB4514 /* UserCell.swift */; };
 		376BE37024A4DFF700FB4514 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376BE36E24A4DFF700FB4514 /* UserCell.xib */; };
 		376BE37224A4E1CF00FB4514 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BE37124A4E1CF00FB4514 /* UsersViewController.swift */; };
@@ -59,10 +59,10 @@
 		376BE34424A4DE7700FB4514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		376BE34624A4DE7700FB4514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		376BE34B24A4DE7700FB4514 /* API-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "API-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		376BE34F24A4DE7700FB4514 /* BrezaaDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrezaaDemoTests.swift; sourceTree = "<group>"; };
+		376BE34F24A4DE7700FB4514 /* API-DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API-DemoTests.swift"; sourceTree = "<group>"; };
 		376BE35124A4DE7700FB4514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		376BE35624A4DE7700FB4514 /* API-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "API-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		376BE35A24A4DE7700FB4514 /* BrezaaDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrezaaDemoUITests.swift; sourceTree = "<group>"; };
+		376BE35A24A4DE7700FB4514 /* API-DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API-DemoUITests.swift"; sourceTree = "<group>"; };
 		376BE35C24A4DE7700FB4514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		376BE36D24A4DFF700FB4514 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		376BE36E24A4DFF700FB4514 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 		376BE34E24A4DE7700FB4514 /* API-DemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				376BE34F24A4DE7700FB4514 /* BrezaaDemoTests.swift */,
+				376BE34F24A4DE7700FB4514 /* API-DemoTests.swift */,
 				376BE35124A4DE7700FB4514 /* Info.plist */,
 			);
 			path = "API-DemoTests";
@@ -154,7 +154,7 @@
 		376BE35924A4DE7700FB4514 /* API-DemoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				376BE35A24A4DE7700FB4514 /* BrezaaDemoUITests.swift */,
+				376BE35A24A4DE7700FB4514 /* API-DemoUITests.swift */,
 				376BE35C24A4DE7700FB4514 /* Info.plist */,
 			);
 			path = "API-DemoUITests";
@@ -409,7 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				376BE35024A4DE7700FB4514 /* BrezaaDemoTests.swift in Sources */,
+				376BE35024A4DE7700FB4514 /* API-DemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				376BE35B24A4DE7700FB4514 /* BrezaaDemoUITests.swift in Sources */,
+				376BE35B24A4DE7700FB4514 /* API-DemoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
