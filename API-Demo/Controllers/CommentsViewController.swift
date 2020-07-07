@@ -39,6 +39,8 @@ class CommentsViewController: UIViewController {
         updateViewForUserInterfaceStyle()
         tableView.layer.cornerRadius = 18
         tableView.transform = CGAffineTransform(translationX: 0, y: view.frame.height)
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
+        view.addGestureRecognizer(tapGesture)
     }
     
     
@@ -60,6 +62,16 @@ class CommentsViewController: UIViewController {
     }
     
     
+    private func dismissView() {
+        UIView.animate(withDuration: 0.7, delay: 0.1, usingSpringWithDamping: 0.75, initialSpringVelocity: 0, options: [], animations: {
+            self.tableView.transform = CGAffineTransform(translationX: 0, y: self.view.frame.height)
+            self.view.alpha = 0
+        }) { _ in
+            self.dismiss(animated: false, completion: nil)
+        }
+    }
+    
+    
     func updateViewForUserInterfaceStyle() {
         view.backgroundColor = traitCollection.userInterfaceStyle == .light ? UIColor.black.withAlphaComponent(0.6) : UIColor.white.withAlphaComponent(0.15)
     }
@@ -72,7 +84,15 @@ class CommentsViewController: UIViewController {
     //MARK:- Actions
     
     @IBAction func dismissButtonTapped(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
+        dismissView()
+    }
+    
+    
+    @objc func viewTapped(sender: UITapGestureRecognizer) {
+        let point = sender.location(in: view)
+        if !self.tableView.frame.contains(point) {
+            dismissView()
+        }
     }
     
 }
