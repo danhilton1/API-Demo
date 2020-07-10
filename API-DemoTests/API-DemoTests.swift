@@ -11,23 +11,41 @@ import XCTest
 
 class API_DemoTests: XCTestCase {
 
+    var networkManager: NetworkManager!
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
+        networkManager = NetworkManager.shared
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        networkManager = nil
+        super.tearDown()
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testValidUserCount() throws {
+        let url = "https://jsonplaceholder.typicode.com/users"
+        networkManager.downloadData(url: url) { (result: Result<[User],CustomError>) in
+            switch result {
+            case .success(let users):
+                XCTAssertEqual(users.count, 10)
+            case .failure(let error):
+                XCTAssertNotNil(error)
+            }
+        }
+    }
+    
+    
+    func testInvalidURL() throws {
+        let url = "https:/jsonplaceholder.typicode.com/users"
+        networkManager.downloadData(url: url) { (result: Result<[User],CustomError>) in
+            switch result {
+            case .success:
+                break
+            case .failure(let error):
+                XCTAssertTrue(error == .invalidURL)
+            }
         }
     }
 

@@ -615,14 +615,14 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7383RQWB3N;
-				INFOPLIST_FILE = BrezaaDemoTests/Info.plist;
+				INFOPLIST_FILE = "API-DemoTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.danhiltonapps.BrezaaDemoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danhiltonapps.API-DemoTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -637,14 +637,14 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7383RQWB3N;
-				INFOPLIST_FILE = BrezaaDemoTests/Info.plist;
+				INFOPLIST_FILE = "API-DemoTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.danhiltonapps.BrezaaDemoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danhiltonapps.API-DemoTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -658,17 +658,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7383RQWB3N;
-				INFOPLIST_FILE = BrezaaDemoUITests/Info.plist;
+				INFOPLIST_FILE = "API-DemoUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.danhiltonapps.BrezaaDemoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danhiltonapps.API-DemoUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BrezaaDemo;
+				TEST_TARGET_NAME = "API-Demo";
 			};
 			name = Debug;
 		};
@@ -678,17 +678,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7383RQWB3N;
-				INFOPLIST_FILE = BrezaaDemoUITests/Info.plist;
+				INFOPLIST_FILE = "API-DemoUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.danhiltonapps.BrezaaDemoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danhiltonapps.API-DemoUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BrezaaDemo;
+				TEST_TARGET_NAME = "API-Demo";
 			};
 			name = Release;
 		};
